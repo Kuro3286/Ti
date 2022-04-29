@@ -1,0 +1,137 @@
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    top: 7%;
+    margin-left: 150px;
+    transform: translate(-5%,-5%);
+    height: 300px;
+    width:  1620px;
+}
+
+html{
+    font-family:'Poppins-Medium', sans-serif;
+}
+
+body{
+    background: black;
+    height: 100vh;
+    background-color: black;
+}
+
+@font-face{
+    font-family: 'Poppins-Medium';
+	src: url('./Poppins-Medium.ttf');
+}
+
+.container-onglets{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.onglets{
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 575;
+    cursor: pointer;
+    color: white;
+}
+
+.barre{
+    width: 120px;
+    color: black;
+    height:  90px;
+    border-bottom: 3px solid black;
+}
+
+
+.onglets:not(:nth-child(11)){
+    border-right: 1px solid white;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    color: white;
+}
+
+.contenu h3{
+    padding: 20px;
+    color: white;
+}
+
+.contenu hr{
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    background: white;
+    border: none;
+}
+
+.contenu p{
+    padding: 20px;
+}
+
+.contenu ul{
+    padding: 20px;
+}
+
+.active{
+    background-color: rgb(255, 190, 50);
+    color: #000;
+    transition: all 0.3s ease;
+
+}
+
+.active-contenu{
+    animation: fade 0.5s forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+img{
+    margin-left: 20px;
+}
+
+.alinea{
+    text-indent: 20px;
+    margin-right: 1700px;
+    text-align: justify;
+}
+
+.legende{
+    font-size: 12px;
+    text-align: justify;
+    margin-right: 2085px;
+}
+
+.legende_paysage{
+    font-size: 12px;
+    text-align: justify;
+    margin-right: 1890px; 
+}
+
+.preface{
+    text-indent: 20px;
+    text-align: justify;
+    margin-right: 800px;
+    font-size: 18px;
+}
